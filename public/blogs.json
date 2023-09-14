@@ -1,0 +1,43 @@
+[
+    {
+        "id": 101,
+        "title": "Mastering JavaScript Functions",
+        "cover_photo": "https://i.ibb.co/K7mPsV2/programming-codes.jpg",
+        "author": "John Coder",
+        "author_img": "https://i.ibb.co/vmF2krP/author1.jpg",
+        "reading_time": 15,
+        "posted_date": "September 20, 2023",
+        "hashtags": ["JavaScript", "Functions", "Programming"]
+    },
+    {
+        "id": 102,
+        "title": "Building a RESTful API with Node.js",
+        "cover_photo": "https://i.ibb.co/MZsPCd9/programming-background-collage.jpg",
+        "author": "Jane Developer",
+        "author_img": "https://i.ibb.co/2qRg9GC/author2.jpg",
+        "reading_time": 20,
+        "posted_date": "September 18, 2023",
+        "hashtags": ["Node.js", "API", "WebDevelopment"]
+
+    },
+    {
+        "id": 103,
+        "title": "JavaScript Design Patterns for Web Development",
+        "cover_photo": "https://i.ibb.co/m0k8JkH/html-css-collage-concept-with-person.jpg",
+        "author": "Alex Scripter",
+        "author_img": "https://i.ibb.co/DzyRT8V/author3.jpg",
+        "reading_time": 12,
+        "posted_date": "September 15, 2023",
+        "hashtags": ["JavaScript", "DesignPatterns", "Programming"]
+    },
+    {
+        "id": 104,
+        "title": "Responsive Web Design with CSS Grid",
+        "cover_photo": "https://i.ibb.co/37ZyF0z/pexels-designecologist-1779487.jpg",
+        "author": "Mike Webmaster",
+        "author_img": "https://i.ibb.co/RBdp1gd/author4.jpg",
+        "reading_time": 14,
+        "posted_date": "September 10, 2023",
+        "hashtags": ["WebDesign", "CSSGrid", "Responsive"]
+    }
+]
