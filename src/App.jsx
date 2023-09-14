@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <h1>React Knowledge Cafe</h1>
+      <h1 className='text-4xl'>React Knowledge Cafe</h1>
     </>
   )
 }
