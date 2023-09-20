@@ -10,7 +10,7 @@ const Blog = ({ blog }) => {
   } = blog;
   return (
     <>
-      <img className="rounded-xl mt-10" src={cover_photo} alt={`image of ${title}`} />
+      <img className="rounded-xl mt-10 max-h-[450px] w-full" src={cover_photo} alt={`image of ${title}`} />
       <div className="flex justify-between items-center mt-8">
         <div className="flex items-center gap-5">
           <img

@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <main className='container mx-auto'>
-        <section className='grid grid-cols-[2fr_1fr]'>
+        <section className='grid grid-cols-[2fr_1fr] gap-6'>
           <Blogs />
           <Bookmarks />
         </section>
