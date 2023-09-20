@@ -13,8 +13,7 @@ const Blogs = () => {
     console.log(blogs);
 
     return (
-        <div>
-            <h2>Blogs: {blogs.length}</h2>
+        <div className="pb-20">
             {
                 blogs.map(blog => <Blog key={blog.id} blog={blog} />)
             }
