@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-const Blog = ({ blog, handleBookmark }) => {
+const Blog = ({ blog, handleBookmark, handleReadingTime }) => {
   const {
     cover_photo,
     author_img,
@@ -59,7 +59,7 @@ const Blog = ({ blog, handleBookmark }) => {
         </span>
       ))}
       <div className="mt-5 pb-9 border-b">
-        <button className="text-lg text-violet-600 font-semibold underline">
+        <button onClick={() => handleReadingTime(reading_time)} className="text-lg text-violet-600 font-semibold underline">
           Mark as read
         </button>
       </div>
@@ -69,7 +69,8 @@ const Blog = ({ blog, handleBookmark }) => {
 
 Blog.propTypes = {
     blog: PropTypes.object,
-    handleBookmark: PropTypes.func
+    handleBookmark: PropTypes.func,
+    handleReadingTime: PropTypes.func
 }
 
 export default Blog;

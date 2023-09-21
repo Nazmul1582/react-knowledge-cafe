@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [bookmarks, setBookmarks] = useState([]);
+  const [readingTime, setReadingTime] = useState(0);
 
   const handleBookmark = (title) => {
     if (bookmarks.includes(title)) {
@@ -17,14 +18,21 @@ function App() {
     setBookmarks([...bookmarks, title]);
   };
 
+  const handleReadingTime = (time) => {
+    setReadingTime(readingTime + time);
+  };
+
   return (
     <>
       <Header />
       <main className="container mx-auto">
         <ToastContainer pauseOnHover={false} />
         <section className="grid grid-cols-[2fr_1fr] gap-6">
-          <Blogs handleBookmark={handleBookmark} />
-          <Bookmarks bookmarks={bookmarks} />
+          <Blogs
+            handleBookmark={handleBookmark}
+            handleReadingTime={handleReadingTime}
+          />
+          <Bookmarks bookmarks={bookmarks} readingTime={readingTime} />
         </section>
       </main>
     </>
