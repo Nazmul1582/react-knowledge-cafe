@@ -8,17 +8,15 @@ import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [bookmarks, setBookmarks] = useState([]);
-  const [warning, setWarning] = useState("");
 
   const handleBookmark = (title) => {
     if (bookmarks.includes(title)) {
-      setWarning(toast.warn("Already added in bookmark!"));
+      toast.warn("Already added in bookmark!");
       return;
     }
     setBookmarks([...bookmarks, title]);
   };
 
-  console.log(warning);
   return (
     <>
       <Header />
