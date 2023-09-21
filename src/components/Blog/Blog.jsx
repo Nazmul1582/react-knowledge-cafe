@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-const Blog = ({ blog }) => {
+const Blog = ({ blog, handleBookmark }) => {
   const {
     cover_photo,
     author_img,
@@ -10,6 +10,7 @@ const Blog = ({ blog }) => {
     title,
     hashtags,
   } = blog;
+
   return (
     <>
       <img
@@ -32,6 +33,7 @@ const Blog = ({ blog }) => {
         <div className="flex gap-2">
           <p className="text-lg text-gray-500">{reading_time} min read</p>
           <svg
+          onClick={() => handleBookmark(title)}
             className="cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -66,7 +68,8 @@ const Blog = ({ blog }) => {
 };
 
 Blog.propTypes = {
-    blog: PropTypes.object
+    blog: PropTypes.object,
+    handleBookmark: PropTypes.func
 }
 
 export default Blog;
