@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const Blog = ({ blog }) => {
   const {
     cover_photo,
@@ -10,7 +12,11 @@ const Blog = ({ blog }) => {
   } = blog;
   return (
     <>
-      <img className="rounded-xl mt-10 max-h-[450px] w-full" src={cover_photo} alt={`image of ${title}`} />
+      <img
+        className="rounded-xl mt-10 max-h-[450px] w-full"
+        src={cover_photo}
+        alt={`image of ${title}`}
+      />
       <div className="flex justify-between items-center mt-8">
         <div className="flex items-center gap-5">
           <img
@@ -26,6 +32,7 @@ const Blog = ({ blog }) => {
         <div className="flex gap-2">
           <p className="text-lg text-gray-500">{reading_time} min read</p>
           <svg
+            className="cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -45,7 +52,7 @@ const Blog = ({ blog }) => {
       </div>
       <h2 className="text-4xl font-bold my-4">{title}</h2>
       {hashtags.map((hashtag, index) => (
-        <span key={index} className="mr-3 text-lg text-gray-400">
+        <span key={index} className="mr-3 text-lg text-gray-400 cursor-pointer">
           #{hashtag}
         </span>
       ))}
@@ -57,5 +64,9 @@ const Blog = ({ blog }) => {
     </>
   );
 };
+
+Blog.propTypes = {
+    blog: PropTypes.object
+}
 
 export default Blog;

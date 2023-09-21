@@ -10,8 +10,6 @@ const Blogs = () => {
         .then(data => setBlogs(data))
     }, [])
 
-    console.log(blogs);
-
     return (
         <div className="pb-20">
             {
