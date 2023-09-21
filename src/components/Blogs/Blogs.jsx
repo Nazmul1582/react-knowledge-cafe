@@ -12,7 +12,7 @@ const Blogs = ({ handleBookmark, handleReadingTime }) => {
   }, []);
 
   return (
-    <div className="pb-20">
+    <div>
       {blogs.map((blog) => (
         <Blog
           key={blog.id}

@@ -58,7 +58,7 @@ const Blog = ({ blog, handleBookmark, handleReadingTime }) => {
           #{hashtag}
         </span>
       ))}
-      <div className="mt-5 pb-9 border-b">
+      <div className="mt-5 pb-9 border-b last:border-b-0">
         <button onClick={() => handleReadingTime(reading_time)} className="text-lg text-violet-600 font-semibold underline">
           Mark as read
         </button>
