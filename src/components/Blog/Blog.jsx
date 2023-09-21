@@ -33,7 +33,7 @@ const Blog = ({ blog, handleBookmark, handleReadingTime }) => {
         <div className="flex gap-2">
           <p className="text-lg text-gray-500">{reading_time} min read</p>
           <svg
-          onClick={() => handleBookmark(title)}
+          onClick={() => handleBookmark(blog)}
             className="cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
             width="24"

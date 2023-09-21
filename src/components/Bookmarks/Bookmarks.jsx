@@ -16,7 +16,7 @@ const Bookmarks = ({ bookmarks, readingTime }) => {
 
         {bookmarks.map((bookmark, index) => (
           <div key={index} className="bg-white p-5 rounded-lg mb-6 last:mb-0">
-            <h4 className="text-lg font-semibold">{bookmark}</h4>
+            <h4 className="text-lg font-semibold">{bookmark.title}</h4>
           </div>
         ))}
       </div>

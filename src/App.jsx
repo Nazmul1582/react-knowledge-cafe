@@ -10,16 +10,19 @@ function App() {
   const [bookmarks, setBookmarks] = useState([]);
   const [readingTime, setReadingTime] = useState(0);
 
-  const handleBookmark = (title) => {
-    if (bookmarks.includes(title)) {
+  const handleBookmark = (blog) => {
+    if (bookmarks.includes(blog)) {
       toast.warn("Already added in bookmark!");
       return;
     }
-    setBookmarks([...bookmarks, title]);
+    setBookmarks([...bookmarks, blog]);
   };
 
   const handleReadingTime = (time) => {
     setReadingTime(readingTime + time);
+    
+    const newBookmark =  bookmarks.filter(bookmark => bookmark.reading_time !== time)
+    setBookmarks(newBookmark)
   };
 
   return (
